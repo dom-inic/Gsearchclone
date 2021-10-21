@@ -16,7 +16,7 @@ export const StateContextProvider = ({ children }) => {
       params: {hl: 'en', q: 'Avengers+Endgame', gl: 'us'},
       headers: {
         'x-rapidapi-host': 'google-search1.p.rapidapi.com',
-        'x-rapidapi-key': '67c91c5f8bmshfcded5937421e8ap1b2b87jsn019e62c71641',
+        'x-rapidapi-key': 'your key api key',
       },
     });
 
