@@ -1,14 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+import React from 'react';
+import ReactDom from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import App from './App';
+import { StateContextProvider } from './contexts/StateContextProvider';
 import './global.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+ReactDom.render(
+  <StateContextProvider>
+    <Router>
+      <App />
+    </Router>
+  </StateContextProvider>,
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
